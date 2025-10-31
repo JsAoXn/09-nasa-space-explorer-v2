@@ -70,6 +70,7 @@ button {
   color: black;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #bfbfbf;
 }
@@ -80,7 +81,7 @@ button:hover {
     flex-direction: row;
     padding: 0;
   }
-  
+
   input[type="date"],
   button {
     width: auto;
@@ -98,13 +99,14 @@ button:hover {
 
 /* Gallery items */
 .gallery-item {
-  flex: 1 1 100%;  /* full width by default */
+  flex: 1 1 100%;
+  /* full width by default */
   min-width: 280px;
-  max-width: 500px;
+  /*max-width: 500px;*/
   background: white;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -117,7 +119,8 @@ button:hover {
   }
 }
 
-.gallery-item img {
+.gallery-item img,
+.gallery-item iframe {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -141,4 +144,10 @@ button:hover {
 .placeholder-icon {
   font-size: 48px;
   margin-bottom: 20px;
+}
+
+.fun {
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 20px;
 }
